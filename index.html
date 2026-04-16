@@ -4,69 +4,164 @@
   <meta charset="UTF-8">
   <title>Astrology Learning App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      background: #0d1117;
-      color: white;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      padding: 80px 20px;
       text-align: center;
     }
-    header {
-      padding: 50px 20px;
-      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
     }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #fff;
+      color: #4f46e5;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e0e7ff;
+    }
+
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
+      text-align: center;
     }
-    footer {
-      background: #161b22;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #c7d2fe;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .features, .offers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1e293b;
       padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #334155;
+    }
+
+    footer {
+      background: #020617;
+      padding: 20px;
+      text-align: center;
       font-size: 14px;
+      margin-top: 40px;
     }
-    a {
-      color: #58a6ff;
+
+    .contact p {
+      margin: 5px 0;
     }
+
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Astrology Learning App</h1>
-  <p>Learn Astrology Anytime, Anywhere</p>
+  <p>Learn Astrology Using Video Lessons & Unlock Your Knowledge</p>
+  <a href="#" class="btn">Start Learning</a>
 </header>
 
 <section>
-  <h2>About Our App</h2>
-  <p>
-    Our Astrology Learning App provides easy-to-understand video lessons 
-    for beginners and advanced learners. Learn astrology concepts, charts, 
-    and predictions in a simple and structured way.
-  </p>
+  <div class="container">
+    <h2>About Our App</h2>
+    <p>
+      Our Astrology Learning App helps you master astrology through structured 
+      video lessons. Whether you are a beginner or advanced learner, 
+      our app makes astrology simple, practical, and easy to understand.
+    </p>
+  </div>
 </section>
 
 <section>
-  <h2>Features</h2>
-  <p>✔ Video-based learning</p>
-  <p>✔ Beginner to advanced lessons</p>
-  <p>✔ Practical astrology knowledge</p>
+  <div class="container">
+    <h2>Learn Astrology Through Videos</h2>
+    <div class="features">
+      <div class="card">🎥 Step-by-step video tutorials</div>
+      <div class="card">📚 Beginner to advanced courses</div>
+      <div class="card">🧠 Easy explanations & real examples</div>
+    </div>
+  </div>
 </section>
 
 <section>
-  <h2>Contact Us</h2>
-  <p>Email: yourmail@gmail.com</p>
-  <p>Phone: +91 XXXXXXXX</p>
+  <div class="container">
+    <h2>Special Offers</h2>
+    <div class="offers">
+      <div class="card">🔥 Discount on premium courses</div>
+      <div class="card">💰 Affordable learning plans</div>
+      <div class="card">🎁 Exclusive content for members</div>
+    </div>
+  </div>
 </section>
 
 <section>
-  <h2>Privacy Policy</h2>
-  <p>
-    We respect your privacy. We do not share your personal information with third parties.
-  </p>
+  <div class="container contact">
+    <h2>Contact Us</h2>
+    <p>Email: yourmail@gmail.com</p>
+    <p>Phone: +91 XXXXXXXX</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Privacy Policy</h2>
+    <p>
+      We respect your privacy and ensure that your personal data is safe. 
+      We do not share your information with third parties.
+    </p>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Astrology Learning App</p>
+  <p>© 2026 Astrology Learning App | All Rights Reserved</p>
 </footer>
 
 </body>
